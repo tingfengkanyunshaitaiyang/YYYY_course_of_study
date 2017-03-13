@@ -1,27 +1,24 @@
-°²×°git·şÎñÆ÷£º
-1.Ê×ÏÈ°²×°ssh
+å®‰è£…gitæœåŠ¡å™¨ï¼š
+1.é¦–å…ˆå®‰è£…ssh
 	sudo apt-get install openssh-server
 	netstat -tlp
 
-2.sudo adduser git
-¾ÍÓÃlangÕâ¸öÓÃ»§¾Í¿ÉÒÔÁË
+2.sudo adduser gitï¼ˆå¯ä»¥ä¸ç”¨æ–°å»ºç”¨æˆ·ï¼‰
+å°±ç”¨langè¿™ä¸ªç”¨æˆ·å°±å¯ä»¥äº†
 
 
 
 
-ĞÂ½¨Ò»¸öÄ¿Â¼/home/lang/git_server/
-
+3.æ–°å»ºä¸€ä¸ªç›®å½•/home/lang/git_server/
 sudo git init --bare sample.git
-
-ĞŞ¸ÄÄ¿Â¼È¨ÏŞ£ºsudo chown -R lang:lang sample.git
-
-ÏÂÔØ·½·¨£ºgit clone lang@10.0.3.131:/home/lang/git_server/sample.git
+ä¿®æ”¹ç›®å½•æƒé™ï¼šsudo chown -R lang:lang sample.gitï¼ˆè¿™ä¸ªä¸€å®šè¦æœ‰ï¼‰
+ä¸‹è½½æ–¹æ³•ï¼šgit clone lang@10.0.3.131:/home/lang/git_server/sample.git
 
 
 sudo git init --bare langCode.git
 git clone lang@10.0.3.131:/home/lang/gitServer/langCode.git
 
 
-9.»ñµÃgitosis°ü£ºÇĞ»»µ½/tmpÏÂ¡£(ÕâÒ»²½¿ÉÒÔ²»ÓÃµÄ)
+9.è·å¾—gitosisåŒ…ï¼šåˆ‡æ¢åˆ°/tmpä¸‹ã€‚(è¿™ä¸€æ­¥å¯ä»¥ä¸ç”¨çš„)
 git clone https://github.com/res0nat0r/gitosis.git
 /tmp/gitosis$ sudo python setup.py install
