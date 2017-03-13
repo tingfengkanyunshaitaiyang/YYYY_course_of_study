@@ -6,15 +6,11 @@
 2.sudo adduser git（可以不用新建用户）
 就用lang这个用户就可以了
 
-
-
-
 3.新建一个目录/home/lang/git_server/
 sudo git init --bare sample.git
 修改目录权限：sudo chown -R lang:lang sample.git（这个一定要有）
 下载方法：git clone lang@10.0.3.131:/home/lang/git_server/sample.git
-
-
+新建一个服务器：
 sudo git init --bare langCode.git
 git clone lang@10.0.3.131:/home/lang/gitServer/langCode.git
 
@@ -22,3 +18,5 @@ git clone lang@10.0.3.131:/home/lang/gitServer/langCode.git
 9.获得gitosis包：切换到/tmp下。(这一步可以不用的)
 git clone https://github.com/res0nat0r/gitosis.git
 /tmp/gitosis$ sudo python setup.py install
+
+//end of file.
